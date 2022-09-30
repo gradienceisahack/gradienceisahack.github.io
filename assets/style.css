@@ -1,0 +1,300 @@
+/* RESET & TYPOGRAPHY */
+:root {
+  --blue1: rgb(153,193,241);
+  --blue2: rgb(98,160,234);
+  --blue3: rgb(53,132,228);
+  --blue4: rgb(28,113,216);
+  --blue5: rgb(26,95,180);
+  --green1: rgb(143,240,164);
+  --green2: rgb(87,227,137);
+  --green3: rgb(51,209,122);
+  --green4: rgb(46,194,126);
+  --green5: rgb(38,162,105);
+  --yellow1: rgb(249,240,107);
+  --yellow2: rgb(248,228,92);
+  --yellow3: rgb(246,211,45);
+  --yellow4: rgb(245,194,17);
+  --yellow5: rgb(229,165,10);
+  --orange1: rgb(255,190,111);
+  --orange2: rgb(255,163,72);
+  --orange3: rgb(255,120,0);
+  --orange4: rgb(230,97,0);
+  --orange5: rgb(198,70,0);
+  --red1: rgb(246,97,81);
+  --red2: rgb(237,51,59);
+  --red3: rgb(224,27,36);
+  --red4: rgb(192,28,40);
+  --red5: rgb(165,29,45);
+  --purple1: rgb(220,138,221);
+  --purple2: rgb(192,97,203);
+  --purple3: rgb(145,65,172);
+  --purple4: rgb(129,61,156);
+  --purple5: rgb(97,53,131);
+  --brown1: rgb(205,171,143);
+  --brown2: rgb(181,131,90);
+  --brown3: rgb(152,106,68);
+  --brown4: rgb(134,94,60);
+  --brown5: rgb(99,69,44);
+  --light1: rgb(255,255,255);
+  --light2: rgb(246,245,244);
+  --light3: rgb(222,221,218);
+  --light4: rgb(192,191,188);
+  --light5: rgb(154,153,150);
+  --dark1: rgb(119,118,123);
+  --dark2: rgb(94,92,100);
+  --dark3: rgb(61,56,70);
+  --dark4: rgb(36,31,49);
+  --dark5: rgb(0,0,0);
+  --text: #f6f5f4;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Cantarell", -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  word-spacing: -0.01em;
+}
+@media (min-width: 700px) {
+  html, body {
+    font-size: 18px;
+  }
+}
+body {
+	color: var(--text);
+  background: linear-gradient(90deg, var(--green5) 0%, var(--green4) 100%);
+
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 3rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+a {
+  color: var(--green1);
+}
+
+/* LAYOUT */
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+/* COMPONENTS */
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+.subtitle {
+  display: block;
+  max-width: 20em;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.small-print {
+  font-size: 1em;
+  text-align: center;
+  max-width: 30em;
+  margin: 1.5rem auto 3rem;
+}
+
+.button {
+  display: block;
+  border-radius: 99999px;
+  margin: 16px auto;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  filter: /* Sharp drop shadow */
+          drop-shadow(0 0.08rem 0.1em rgba(0,0,0, 0.2))
+          /* Diffuse ambient shadow */
+          drop-shadow(0 0.1rem 0.9em rgba(0,0,0, 0.2));
+}
+  .button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .button:active {
+    transform: scale(0.98);
+  }
+
+  .small.button {
+    padding: 0.6rem 2rem;
+    width: 80%;
+    margin: 1rem auto;
+    max-width: 14em;
+  }
+  
+  @media (min-width: 1100px) {
+    .small-button {
+      width: 45%;
+    }
+  }
+  
+  .green-button {
+    background: linear-gradient(0deg, var(--green5) 0%, var(--green3) 100%);
+    color: white;
+  }
+  .blue-button {
+    background: linear-gradient(0deg, #3584e4 0%, #62a0ea 100%);
+    color: white;
+  }
+  .white-button {
+    background: linear-gradient(0deg, #c0bfbc 0%, #f6f5f4 100%);
+    color: #241f31;
+  }
+  .gray-button {
+    background: linear-gradient(0deg, #5e5c64 0%, #9a9996 100%);
+    color: white;
+  }
+  .red-button {
+    background: linear-gradient(0deg, #c01c28 0%, #ed333b 100%);
+    color: white;
+  }
+
+.bigicon {
+  width: 80%;
+  height: auto;
+}
+
+.icon-shadow {
+  filter: /* Sharp drop shadow */
+          drop-shadow(0 0.08rem 0.1rem rgba(0,0,0, 0.35))
+          /* Diffuse ambient shadow */
+          drop-shadow(0 0.4rem 0.7rem rgba(0,0,0, 0.18));
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+  @media (min-width: 600px) {
+    .group {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .group .block {
+    width: 100%;
+    self-align: flex-start;
+    flex: 1 1 40%;
+
+  }
+  
+  @media (min-width: 600px) {
+    .group .block {
+      width: 30em;
+    }
+  }
+
+  .group .block.centered { text-align: center; }
+
+  .block h3 {
+    font-size: 1.4em;
+  }
+
+  .container h2 {
+    text-align: center;
+    margin: 5rem 0 2rem;
+  }
+  .block p {
+    margin: 1rem auto;
+  }
+  .block .icon {
+    margin-bottom: 1rem;
+  }
+
+/* ONE-OFF */
+.top-row {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+  .top-row img.illustration {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .top-row { min-height: 100vh; }
+    .top-row img.illustration { width: 60vw; }
+  }
+  
+  @media (min-width: 900px) {
+    .top-row img.illustration { width: 700px; }
+  }
+  
+.how-row {
+  overflow: hidden;
+  background-color: var(--dark3);
+  padding: 3rem 0;
+}
+
+.download-button {
+  width: 12em;
+  padding: 0.9em 3em;
+  font-size: 1.4em;
+}
+
+
+
+ul.textlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  margin: 2rem 0 8rem; padding: 0;
+  gap: 1rem;
+}
+
+  ul.textlist li a {
+    display: block;
+    text-decoration: none;
+    color: var(--light3);
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+#logo {
+  margin: 0;
+  display: block;
+  /* youngster is no fun 
+  position: sticky;
+  top: 12px;
+  */
+  width: 150px; height: auto;
+}
+
+/* FOOTER */
+footer {
+  font-size: 80%;
+  background-color: var(--dark5);
+  color: white;
+  padding: 3rem 3rem 7rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
