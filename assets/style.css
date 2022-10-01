@@ -231,7 +231,7 @@ a {
   }
   
   @media (min-width: 600px) {
-    .top-row { min-height: 100vh; }
+    .top-row { min-height: 50vh; }
     .top-row img.illustration { width: 60vw; }
   }
   
