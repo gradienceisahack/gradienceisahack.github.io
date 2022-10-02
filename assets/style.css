@@ -69,7 +69,7 @@ html, body {
 }
 body {
 	color: var(--text);
-  background: linear-gradient(90deg, var(--blue5) 0%, var(--blue4) 100%);
+  background: linear-gradient(90deg, var(--yellow5) 0%, var(--dark5) 100%);
 
 }
 h1, h2, h3, h4, h5, h6 {
@@ -220,8 +220,26 @@ a {
 
 /* ONE-OFF */
 .top-row {
-  padding: 3rem 0;
+  padding: 4rem 0 4rem;
   text-align: center;
+}
+@media (min-height: 700px) and (min-width: 500px) {
+  .top-row {
+    padding: 8rem 0 5rem;
+  }
+}
+
+
+.banner {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+}
+@media (min-width: 700px) {
+  .banner {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
   .top-row img.illustration {
