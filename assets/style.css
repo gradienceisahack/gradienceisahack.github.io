@@ -304,7 +304,7 @@ a {
   font-size: 18px;
   color: var(--text);
   padding: 1em 0 5em 0;
-  background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--purple5) 100%);
+  background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
 }
 
 .gradience-not-against{
