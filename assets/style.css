@@ -79,9 +79,9 @@ body {
 }
 
 a {
-  color: var(--blue1);
+  color: var(--dark4);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: extra-bold;
 }
 
 
@@ -159,6 +159,10 @@ a {
 
 .green-button {
   background: linear-gradient(0deg, var(--green5) 0%, var(--green3) 100%);
+  color: var(--text);
+}
+
+.green-button a {
   color: var(--text);
 }
 
@@ -307,10 +311,6 @@ a {
   overflow: hidden;
   background-color: var(--green4);
   padding: 3em 0 2em;
-}
-
-.gradience-not-against a{
-  color: var(--dark4);
 }
 
 .gradience-not-against p {
