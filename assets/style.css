@@ -95,6 +95,7 @@ a {
 .title {
   font-weight: 800;
   font-size: 3rem;
+  line-height: 1.4;
 }
 
 .title-1 {
@@ -117,7 +118,6 @@ a {
 }
 
 .subtitle {
-  color: var(--dark4);
   display: block;
   max-width: 20em;
   margin: 2rem auto 0;
@@ -126,7 +126,6 @@ a {
 }
 
 .small-print {
-  color: var(--dark4);
   font-size: 1em;
   text-align: center;
   max-width: 30em;
@@ -201,7 +200,6 @@ a {
 
 .block p {
   margin: 1rem auto;
-  text-align: center;
 }
 
 .icons {
@@ -222,12 +220,12 @@ a {
 
 @media (max-width: 600px) {
   .icon {
-    transform: scale(5.0);
-    margin: 2rem;
+    transform: scale(4.0);
+    margin: 2rem 2rem 1rem;
   }
 
   .heart {
-    transform: scale(4.0);
+    transform: scale(3.0);
   }
 }
 
@@ -262,16 +260,6 @@ a {
   }
 }
 
-@media (min-width: 400px) {
-  section {
-    min-width: 50vh;
-  }
-
-  footer {
-    min-width: 50vh;
-  }
-}
-
 @media (min-width: 500px) {
   .splash {
     min-height: 50vh;
@@ -287,6 +275,16 @@ a {
     width: 400px;
   }
 }
+
+@media (min-width: 400px) {
+  section {
+    min-width: 50vh;
+  }
+
+  footer {
+    min-width: 50vh;
+  }
+}
   
 .title-why-gradience-hack {
   overflow: hidden;
@@ -298,19 +296,20 @@ a {
   text-align: left;
   line-height: 1.2;
   font-size: 18px;
-  color: var(--text);
   padding: 1em 0 5em 0;
-  background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--purple5) 100%);
+  background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
 }
 
 .gradience-not-against {
   overflow: hidden;
   background-color: var(--green4);
-  padding: 3rem 0;
+  padding: 3em 0 2em;
 }
 
 .gradience-not-against p {
   padding: 2em 0;
+  font-size: 20px;
+  text-align: center;
 }
 
 
