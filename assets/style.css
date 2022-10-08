@@ -332,4 +332,5 @@ footer {
 footer a {
   text-decoration: none;
   font-weight: bold;
+  color: var(--blue2);
 }
