@@ -80,6 +80,8 @@ body {
 
 a {
   color: var(--blue1);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
@@ -126,6 +128,10 @@ a {
 }
 
 .small-print {
+<<<<<<< HEAD
+=======
+
+>>>>>>> d11532f (feat: theming warn)
   font-size: 1em;
   text-align: center;
   max-width: 30em;
@@ -293,17 +299,21 @@ a {
 }
 
 .content-why-gradience-hack {
-  text-align: left;
+  text-align: center;
   line-height: 1.2;
   font-size: 18px;
   padding: 1em 0 5em 0;
   background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
 }
 
-.gradience-not-against {
+.gradience-not-against{
   overflow: hidden;
   background-color: var(--green4);
   padding: 3em 0 2em;
+}
+
+.gradience-not-against a{
+  color: var(--dark4);
 }
 
 .gradience-not-against p {
