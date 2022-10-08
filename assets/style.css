@@ -201,6 +201,7 @@ a {
 
 .block p {
   margin: 1rem auto;
+  text-align: center;
 }
 
 .icons {
