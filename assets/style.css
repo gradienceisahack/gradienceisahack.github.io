@@ -79,9 +79,9 @@ body {
 }
 
 a {
-  color: var(--dark4);
+  color: var(--blue1);
   text-decoration: none;
-  font-weight: extra-bold;
+  font-weight: bold;
 }
 
 
@@ -162,14 +162,17 @@ a {
   color: var(--text);
 }
 
-.green-button a {
-  color: var(--text);
+.visit-button {
+  width: 16em;
+  padding: 0.9em 2em;
+  font-size: 1.2em;
 }
 
-.visit-button {
-  width: 18em;
-  padding: 0.9em 2em;
-  font-size: 1.4em;
+@media (min-size: 480px) {
+  .visit-button {
+    width: 16em;
+    font-size: 1.2em;
+  }
 }
 
 .group {
@@ -256,19 +259,9 @@ a {
   width: 100%;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 460px) {
   .splash {
     min-width: 50vh;
-  }
-
-  .logo {
-    width: 60vw;
-  }
-}
-
-@media (min-width: 500px) {
-  .splash {
-    min-height: 50vh;
   }
 
   .logo {
@@ -282,7 +275,7 @@ a {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 460px) {
   section {
     min-width: 50vh;
   }
@@ -299,22 +292,22 @@ a {
 }
 
 .content-why-gradience-hack {
-  text-align: center;
   line-height: 1.2;
+  text-align: left;
   font-size: 18px;
-  color: var(--text);
   padding: 1em 0 5em 0;
   background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
 }
 
-.gradience-not-against{
+.gradience-not-against {
   overflow: hidden;
   background-color: var(--green4);
   padding: 3em 0 2em;
 }
 
 .gradience-not-against p {
-  padding: 2em 0;
+  line-height: 1.4;
+  padding: 1.5em 0;
   font-size: 20px;
   text-align: center;
 }
