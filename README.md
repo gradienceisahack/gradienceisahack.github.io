@@ -1,4 +1,4 @@
-# Gradience is a hack! Website
+# "Gradience is a hack" Website
 
 Simple website for explaining why Gradience is a hack and isn't officially supported by GNOME fundation.
 
