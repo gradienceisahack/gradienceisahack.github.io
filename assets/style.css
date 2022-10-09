@@ -244,7 +244,7 @@ a {
 .splash {
   padding: 8rem 0 2rem;
   text-align: center;
-  background: linear-gradient(90deg, #392955 0%, #3a6294 100%);
+  background: linear-gradient(45deg, var(--blue5) 20%, var(--purple5) 100%);
   color: var(--text);
 }
 
