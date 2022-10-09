@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gradience is a hack</title>
-  <meta name="title" content="Gradience is a hack">
-  <meta itemprop="name" content="Gradience is a hack">
+    <!-- Meta -->
+    <title>Gradience is a hack</title>
+    <meta name="title" content="Gradience is a hack">
+    <meta itemprop="name" content="Gradience is a hack">
 
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="assets/logo.svg">
-</head>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gradience is a hack">
+    <meta property="og:url" content="https://gradienceisahack.github.io/">
 
-<body>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/welcome.svg">
+  </head>
 
-
-  <div class="top-row">
-    <div class="container">
-      <img class="banner" src="assets/welcome.svg" alt="Gradience welcome">
-      <h1 class="title">Gradience is a hack!</h1>
-      <p class="subtitle">Gradience is a tool for tweakers who want to customize GNOME</p>
-      <p class="small-print">It's not supported by the GNOME Team and theming issue shouldn't be reported to GNOME</p>
-
-    </div>
-  </div>
-
-  <div class="how-row">
-    <div class="container group">
-
-      
-
-      <div class="block">
-        <h3 class="">Why it's an hack?</h3>
-        <p>Gradience is not supported by the GNOME Team</p>
-        <ul>
-          <li>Gradience modify CSS, that's consired as an hacky way</li>
-          <li>One day, there will be a recoloring API</li>
+  <body>
+    <section class="splash">
+      <div class="container">
+        <img class="logo" src="assets/welcome.svg" alt="Gradience Logo">
+        <h1 class="title title-1">Gradience is a hack!</h1>
       </div>
+    </section>
 
-    <div class="block"><a href="https://usegradience.github.io" class="button download-button blue-button">Download</a></div>
+    <section class="title-why-gradience-hack">
+      <div class="container group">
+        <div class="block">
+          <div class="icons">
+            <img src="assets/symbolics/warning-symbolic.svg" class="icon" alt="Warning symbolic">
+          </div>
 
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <a href="https://gradienceteam.github.io">&copy; 2022 Gradience Team</a>
-      <p>Base on the <a href="https://gitlab.gnome.org/Teams/Circle/">GNOME Circle</a> website</p>
+          <h1 class="title title-1">Why Gradience is a hack?</h1>
+        </div>
+      </div>
+    </section>
 
+    <section class="content-why-gradience-hack">
+      <div class="container group">
+        <div class="block">
+          <p class="title title-2">Gradience overrides CSS for recoloring.</p>
+          <p>Gradience overrides Adwaita CSS with custom values, this causes issues like invisible text, wrong colors, broken paddings and etc.</p>
+
+          <p class="title title-2">Gradience is not supported by Adwaita.</p>
+          <p>Gradience can stop working if Adwaita will make changes in components Gradience uses.</p>
+
+          <p class="title title-2">Gradience can break UI.</p>
+          <p>Gradience can break some apps UI that rely on custom CSS by default.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gradience-not-against">
+      <div class="container group">
+        <div class="block">
+          <div class="icons">
+            <img src="assets/symbolics/stopthemingmyapp-symbolic.svg" class="icon" alt="Gradience heart stoptheamingmyapp">
+          </div>
+
+          <h1 class="title title-1">Gradience is not against stopthemingmy.app</h1>
+          <p>Gradience Team is not against stopthemingmy.app and Adwaita Developers idea, Gradience is a tool for tinkers that want to theme their desktops at their liking, and not a tool for distributions to change theme in them by default, Gradience Team agrees with importance of unified look of Adwaita to make sure that all apps work right and Developers have unified and stable tool for creating their apps.</p>
+          <a href="https://stopthemingmy.app/" class="button visit-button green-button">Visit stopthemingmy.app</a>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2022 Gradience Team</p>
+      <p>Based on the <a href="https://gitlab.gnome.org/Teams/Circle/">GNOME Circle</a> and <a href="https://gitlab.gnome.org/Teams/Design/cantarell.gnome.org">Cantarell Typeface Family</a> websites</p>
       <p>Creative Commons CC-BY-SA</p>
-    </div>
-  </footer>
-
-
-</body>
+    </footer>
+  </body>
 </html>
