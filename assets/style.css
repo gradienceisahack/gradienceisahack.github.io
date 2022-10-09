@@ -64,6 +64,7 @@ html, body {
   line-height: 1.6;
   letter-spacing: -0.01em;
   word-spacing: -0.01em;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 700px) {
@@ -296,7 +297,22 @@ a {
   text-align: left;
   font-size: 18px;
   padding: 1em 0 5em 0;
-  background: url("pattern-big.svg"), linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
+  background: linear-gradient(135deg, var(--blue5) 20%, var(--blue1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.content-why-gradience-hack::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: -150%;
+  height: 400%;
+  transform: rotate(-10deg) scale(2.0);
+  background-image: url("pattern.svg");
+  background-position: center;
+  opacity: 0.04;
 }
 
 .gradience-not-against {
