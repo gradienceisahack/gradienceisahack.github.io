@@ -46,7 +46,6 @@
   --dark4: rgb(36,31,49);
   --dark5: rgb(0,0,0);
   --text: #f6f5f4;
-  --maxwidth: 56rem;
 }
 
 * {
@@ -106,16 +105,25 @@ a {
 }
 
 .title-2 {
+  font-size: 2rem;
+  margin: 2rem auto 0;
+}
+
+.title-3 {
   font-size: 1.5rem;
   margin: 2rem auto 0;
 }
 
 @media (max-width: 600px) {
-  .title {
+  .title-1 {
     font-size: 2rem;
   }
 
   .title-2 {
+    font-size: 1.5rem;
+  }
+
+  .title-3 {
     font-size: 1rem;
   }
 }
@@ -224,18 +232,10 @@ a {
   margin: 4rem 3rem 2rem 3rem;
 }
 
-.heart {
-  transform: scale(6.0);
-}
-
 @media (max-width: 600px) {
   .icon {
     transform: scale(4.0);
     margin: 2rem 2rem 1rem;
-  }
-
-  .heart {
-    transform: scale(3.0);
   }
 }
 
@@ -286,13 +286,13 @@ a {
   }
 }
   
-.title-why-gradience-hack {
+.title-why-gradience-is-a-hack {
   overflow: hidden;
   background-color: var(--yellow3);
   padding: 2rem 0 1rem;
 }
 
-.content-why-gradience-hack {
+.content-why-gradience-is-a-hack {
   line-height: 1.2;
   text-align: left;
   font-size: 18px;
@@ -302,7 +302,7 @@ a {
   overflow: hidden;
 }
 
-.content-why-gradience-hack::before {
+.content-why-gradience-is-a-hack::before {
   content: "";
   position: absolute;
   left: -10%;
