@@ -247,8 +247,7 @@ a {
 
 .icon {
   display: inline-block;
-  mask-size: cover;
-  transform: scale(7.0);
+  transform: scale(7);
   margin: 4rem 3rem 2rem 3rem;
 }
 
